@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.585); /* Adjust opacity as needed */
+    pointer-events: none; /* Allows click-through to elements below */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container button
+{
+    display: inline-block;
+    background: #080808;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    flex-wrap: wrap;
+    box-shadow: #fff;
+    cursor: pointer;
+}
+.container button img{
+    width: 10px;
+    margin-left: 10px;
+}
+.container button:nth-child(2){
+    background: red;
+}
+.container button:nth-child(2):hover{
+    background: rgb(125, 5, 5);
+}
+.logo{
+    width: 150px;
+    margin-left: 50px;
+    color: rgba(182, 11, 11, 0.947);
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.content h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.content p{
+    font-weight: 400;
+    font-size: 10px;
+}
+.email-signup input{
+    padding: 15px 10px;
+    width: 70%;
+
+}
+.email-signup .btn{
+    margin-left: 0;
+    border-radius: none;
+    width: 25%;
+}
+
+/*---------------------separator----------------------------*/
+.separator {
+    height: 4px; /* Adjust thickness of the line */
+    background-color: grey; /* Adjust color of the line */
+  }
+
+/*-------------------------------Feature-1-----------------*/
+.feature-1{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    margin-left: 1%;
+}
+.contents h1{
+    padding: 100px 80px;
+    margin: 30px;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.contents p{
+    padding: -50px 80px;
+    margin: 200px;
+    margin-top: -70px;
+    font-size: 30px;
+}
+.feature-1 img{
+    padding: 50px 50px;
+    width: 50%;
+    height: 50vh;
+    margin-right: 10%;
+}
+
+/*----------------------------Feature-2----------------------*/
+.feature-2{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    margin-left: 1%;
+}
+.feature-2 img{
+    padding: 50px 50px;
+    width: 50%;
+    height: 50vh;
+    margin-left: 10%;
+}
+.contents-2 h1{
+    padding: 100px 80px;
+    margin: 30px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.contents-2 p{
+    padding: -50px 80px;
+    margin: 200px;
+    margin-top: -70px;
+    font-size: 20px; 
+}
+
+/*---------------------------------Feature-3-----------------*/
+.feature-3{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    margin-left: 1%;
+}
+.contents h1{
+    padding: 100px 80px;
+    margin: 30px;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.contents p{
+    padding: -50px 80px;
+    margin: 200px;
+    margin-top: -70px;
+    font-size: 30px;
+}
+.feature-3 img{
+    padding: 50px 50px;
+    width: 50%;
+    height: 50vh;
+    margin-right: 10%;
+}
+
+/*------------------------------Feature-4----------------------*/
+.feature-4{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    margin-left: 1%;
+}
+.feature-2 img{
+    padding: 50px 50px;
+    width: 50%;
+    height: 50vh;
+    margin-left: 10%;
+}
+.contents-2 h1{
+    padding: 100px 80px;
+    margin: 30px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.contents-2 p{
+    padding: -50px 80px;
+    margin: 200px;
+    margin-top: -70px;
+    font-size: 20px; 
+}
+
+/*------------------------------FAQ-----------------------------*/
+.before-footer
+{
+    width: 100%;
+    height: 100vh;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h1{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .faq-content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .faq-content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq .email-signup .btn{
+    max-width: 600px;
+    background: red;  
+    margin: 20px auto 60px;
+    height: 7vh;
+}
+.faq small{
+    font-size: 13px;
+}
+
+/*-------------------footer---------*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display:inline-table;
+    margin: 70px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .english{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background: #080808;
+    border: 1px solid #fff;
+}
+.english img{
+    width: 10px;
+    margin-left: 10px;
+}
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
